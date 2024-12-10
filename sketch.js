@@ -8,9 +8,15 @@ function setup() {
 
 function draw() {
   background('pink');
+  fill(245, 211, 242);
+  noStroke()
+  for (let i = 0; i < 15; i++){
+    for (let j = 0; j < 15; j++) { 
+     circle(i*50, j*50, 40);
+    }}
   
   // Rotate the coordinate system a little more each frame.
-  let angle = frameCount * 0.01;
+  let angle = frameCount * 0.04;
   rotate(angle);
   noStroke();
   fill(250, 200, 70);
